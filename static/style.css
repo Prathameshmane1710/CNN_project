@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: #f4f7f0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 40px;
+    width: 100%;
+    max-width: 460px;
+    box-shadow: 0 12px 40px rgba(79, 107, 69, 0.15);
+    border: 1px solid #e2ead9;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #4f6b45;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    color: #8aa873;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+.upload-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #b9c9a8;
+    border-radius: 14px;
+    min-height: 200px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    overflow: hidden;
+    background: #f9fbf6;
+}
+
+.upload-box:hover {
+    border-color: #8aa873;
+    background: #f1f6ea;
+}
+
+#uploadText {
+    color: #a3b78f;
+    font-size: 15px;
+}
+
+#preview {
+    display: none;
+    max-width: 100%;
+    max-height: 260px;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 24px;
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #8aa873;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #4f6b45;
+}
+
+#result {
+    margin-top: 26px;
+    font-size: 22px;
+    font-weight: 700;
+    min-height: 30px;
+}
+
+.result-prob {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8aa873;
+    margin-top: 4px;
+}
+
+.ok { color: #3f8f5a; }
+.defective { color: #c0566b; }

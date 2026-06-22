@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casting Defect Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="card">
+        <h1>Casting Defect Detector</h1>
+        <p class="subtitle">Upload a casting image to check it for defects</p>
+
+        <label for="fileInput" class="upload-box" id="uploadBox">
+            <span id="uploadText">Click to choose an image</span>
+            <img id="preview" alt="preview">
+        </label>
+        <input type="file" id="fileInput" accept="image/*" hidden>
+
+        <button id="checkBtn">Check part</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
